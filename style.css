@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+:root{
+    --bg-color: black;
+    --snd-bf-color:white;
+    --text-color: white;
+    --primary-color: #1f71ff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+
+section{
+    min-height: 100vh;
+    padding: 10rem 2% 2rem;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background-color: rgb(13, 12, 12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+/*************** home section ***********/
+
+.logo{
+    color: var(--text-color);
+    font-size: 2.5rem;
+    margin-left: 4rem;
+    font-weight: 400;
+}
+
+.navbar a{
+    color: var(--text-color);
+    font-size: 2rem;
+    margin-left: 5rem;
+    font-weight: 500;
+   
+}
+
+.navbar a:hover, 
+.navbar a.active{
+    color: var(--primary-color);
+    
+}
+
+#menu-icon{
+    color: var(--text-color);
+    font-size: 3.6rem;
+    display: none;
+}
+
+.home{
+   
+    align-items: center;
+    text-align: center;
+}
+
+.home-content{
+    /* padding-block: 2rem;
+    display: flex;
+   flex-direction: column;
+   align-content: space-between;
+   gap: 2rem; */
+            padding-block: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+            text-align: center; /* Center text inside the paragraph */
+}
+
+.home-content h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+}
+
+
+span{
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.home-content h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    /* text-shadow: -0.8rem -0.1rem var(--primary-color);
+    transform: perspective(40rem) rotateX(20deg);
+    letter-spacing: 1rem; */
+}
+
+
+.home-content p{
+    font-size: 2rem;
+    max-width: 75%;
+    width: 100%;
+   padding: 3rem;
+   color: var(--text-color);
+   background-color: var(--primary-color);
+   border-radius: 3rem;
+   margin: 0.7rem 0;
+   display: grid;
+   gap: 1rem;
+
+   
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 0.2rem solid white;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    font-size: 3rem;
+    transition: 0.3s ease;
+    margin-block: 1rem; 
+}
+
+.social-media a:hover{
+    background-color: var(--snd-bf-color);
+    border: 0.2rem solid var(--primary-color);
+    box-shadow: 0 0 3rem var(--primary-color);
+}
+
+.social-media i{
+            color: var(--primary-color);
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--primary-color);
+    border-radius: 10rem;
+    /* box-shadow: 0 0 1rem var(--primary-color); */
+    box-shadow: none;
+    font-size: 2rem;
+    color: var(--text-color);
+    letter-spacing: 0.1rem;
+    font-weight: 0.1rem;
+    transition: 0.5s ease;
+    margin-block: 1rem;
+}
+
+.btn:hover{
+    /* box-shadow: none; */
+    box-shadow: 0 0 1rem var(--primary-color);
+}
+
+
+/* Contact Section */
+
+
+.contact h2{
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    border-radius: 3rem;
+    margin: 0.7rem 0;
+}
+
+::placeholder {
+    color: rgba(255,255,255,50%);
+    opacity: 1; /* Firefox */
+  }
+  
+.contact form .input-box input{
+    width: 49%;
+}
+
+.contact form textarea{
+    resize: none;
+}
+
+.contact form .btn{
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+
+
+/* About Section */
+
+
+.about h2{
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    text-align: center;
+}
+
+/* Education Card */
+
+.education,
+.experience,
+.skills,
+.certificates{
+    max-width: 75%;
+    margin: 1rem auto;
+    text-align: left;
+    margin-bottom: 3rem;
+    display: flex;
+   flex-direction: column;
+   gap: 3rem;
+}
+
+/* .education .card,
+.experience .card,
+.skills .card,
+.certificates .card */
+.card{
+   width: 100%;
+   padding: 3rem;
+   font-size: 1.6rem;
+   color: var(--text-color);
+   background-color: var(--primary-color);
+   border-radius: 3rem;
+   margin: 0.7rem 0;
+   display: grid;
+   gap: 1rem;
+}
+
+/* .education .card span,
+.experience .card span{
+    color: var(--text-color);
+} */
+
+
+.education h3,
+.experience h3,
+.skills h3,
+.certificates h3{
+    font-size: 3rem;
+    background-color: var(--snd-bf-color);
+    color: var(--primary-color);
+    padding: 1rem 2rem;
+    border-left: 1rem solid var(--primary-color);
+    border-radius: 0 2rem 2rem 0;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+    font-weight: 800;
+    
+}
+
+.education .card-title,
+.experience .card-title{
+        font-size: 2rem;
+        font-weight: 700;
+}
+
+.education p,
+.experience p{
+    font-size: 2rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    gap: inherit;
+
+}
+
+/* Experience Card */
+
+.experience .card-description{
+       font-style: italic;
+}
+
+/* Skills Card */
+
+.skills .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.skills .cards{
+    max-width: 15%;
+}
+
+.skills p{
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    
+}
+
+.skills img{
+    max-width: 100%;
+    background-color: black;
+    border-radius: 1rem;
+   padding: 0.8rem;
+   
+}
+
+/* Certificates Card */
+.certificates .card {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scrollbar-width: thin; /* Width of the scrollbar */
+    scrollbar-color: var(--primary-color) var(--text-color); /* Color of the scrollbar */
+}
+
+
+.image-container {
+    display: flex;
+    gap: 6rem; /* Add some space between images */
+    padding-bottom: 8px; /* Add padding to the bottom to accommodate scrollbar */
+}
+
+.image-container img {
+    max-height: 200px; /* Adjust height as needed */
+    height: auto;
+    width: auto;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.image-container img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+
+
+
+/* Breakout Points */
+
+/* 1200px */
+@media(max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+/* 991px */
+@media(max-width: 991px){
+   header{
+    padding: 2rem 3%;
+   }
+
+   section{
+      padding : 10rem 3%;
+   }
+   .contact{
+    min-height: auto;
+   }
+}
+
+/* 768px */
+
+@media(max-width: 768px) {
+   
+
+    .home{
+        flex-direction: column;
+    }
+
+    .home-content h3,.about h3{
+        font-size: 2.6rem;
+    }
+
+    .home-content h1{
+        font-size: 4rem;
+    }
+
+    .services h2{
+        margin-bottom: 3rem;
+    }
+
+    .contact h2{
+        font-size: 4rem;
+    }
+
+
+}
+
+/* 650px */
+
+@media(max-width: 650px) {
+
+        html{
+            font-size: 50%;
+        }
+
+        #menu-icon{
+            display: block;
+        }
+    
+        .navbar{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            padding: 1rem 50%;
+            background-color: var(--bg-color);
+            border-top: .1rem solid rgba(0,0,0,0.2);
+            box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+            display: none;
+        }
+    
+        .active{
+            display: block;
+        }
+
+        .navbar a{
+            display: block;
+            font-size: 2rem;
+            margin: 3rem 0;
+            color: rgb(255, 255, 255);
+        }
+
+        .contact form .input-box input{
+            width: 100%;
+        }
+
+        .about .education .card{
+            width: 100%;
+        }
+
+        .education p{
+            font-size: 1.6rem;
+        }
+}
+
+
+
+
+
