@@ -331,8 +331,14 @@ span{
 
 /* Experience Card */
 
-.experience .card-description{
-       font-style: italic;
+.experience ul{
+    font-size: 1.8rem;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+.experience li{
+    padding: 0.5rem;
 }
 
 /* Skills Card */
@@ -376,15 +382,15 @@ span{
 
 .image-container {
     display: flex;
-    gap: 6rem; /* Add some space between images */
-    padding-bottom: 8px; /* Add padding to the bottom to accommodate scrollbar */
+    gap: 6rem; 
+    padding-bottom: 8px; 
 }
 
 .image-container img {
-    max-height: 200px; /* Adjust height as needed */
+    max-height: 200px; 
     height: auto;
     width: auto;
-    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+    transition: transform 0.3s ease-in-out; 
 }
 
 .image-container img:hover {
@@ -412,10 +418,21 @@ span{
    section{
       padding : 10rem 3%;
    }
+
    .contact{
     min-height: auto;
    }
+
+   .skills .cards {
+    max-width: 20%;
 }
+
+  .skills ::after{
+        content:"";
+        width: 20%;
+    }
+}
+
 
 /* 768px */
 
@@ -488,10 +505,137 @@ span{
             width: 100%;
         }
 
-        .education p{
-            font-size: 1.6rem;
+        .education p,
+        .experience p{
+                font-size: 1.8rem;
+            }
+        .experience ul{
+             font-size: 1.6rem;
+        }
+  
+        .skills p{
+            font-size: 1.2rem;
+            
+        }
+    
+      .skills .cards {
+        max-width: 25%;
+        }
+    
+        .skills ::after{
+            content:"";
+            width: 25%;
+        }
+    
+
+        .image-container img {
+            max-height: 150px; 
         }
 }
+
+
+/* 480px */
+@media (max-width: 480px) {
+    header {
+        padding: 1rem 2%;
+    }
+
+    #menu-icon{
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 50%;
+        background-color: var(--bg-color);
+        border-top: .1rem solid rgba(0,0,0,0.2);
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+        display: none;
+    }
+
+    .active{
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: rgb(255, 255, 255);
+    }
+
+    /* #menu-icon {
+        display: block;
+        font-size: 3.6rem;
+        position: absolute;
+        top: 1rem;
+        right: 2%;
+    } */
+
+    .home-content h3 {
+        font-size: 2.5rem;
+    }
+
+    .home-content h1 {
+        font-size: 3.6rem;
+    }
+
+    .home-content p {
+        font-size: 1.6rem;
+        padding: 2rem;
+    }
+
+    .contact h2 {
+        font-size: 3rem;
+    }
+
+    .contact form .input-box input, .contact form textarea {
+        padding: 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    .contact form .btn {
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+    }
+
+    .about h2 {
+        font-size: 3rem;
+    }
+
+    .education .card, .experience .card, .skills .card, .certificates .card {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .education .card-title, .experience .card-title {
+        font-size: 1.8rem;
+    }
+
+    .skills p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .skills .cards {
+        max-width: 30%;
+    }
+
+    .social-media a {
+        width: 5rem;
+        height: 5rem;
+        font-size: 2rem;
+    }
+
+    .image-container img {
+        max-height: 100px;
+    }
+}
+
+
 
 
 
