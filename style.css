@@ -116,9 +116,20 @@ header{
 
 
 span{
-    font-size: 3.2rem;
-    font-weight: 700;
+   
+    font-weight: 600;
     color: var(--primary-color);
+}
+
+#developer-role,
+#developer {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+#developer{
+    padding-left: 1rem;
 }
 
 .home-content h1{
@@ -134,7 +145,8 @@ span{
 
 .home-content p{
     font-size: 2rem;
-    max-width: 75%;
+    font-weight: 600;
+    max-width: 80%;
     width: 100%;
    padding: 3rem;
    color: var(--text-color);
@@ -143,14 +155,13 @@ span{
    margin: 0.7rem 0;
    display: grid;
    gap: 1rem;
-
-   
 }
 
 .social-media{
     display: flex;
     justify-content: center;
     gap: 2rem;
+    padding: 2rem;
 }
 
 .social-media a{
@@ -187,14 +198,14 @@ span{
     font-size: 2rem;
     color: var(--text-color);
     letter-spacing: 0.1rem;
-    font-weight: 0.1rem;
+    font-weight: 600;
     transition: 0.5s ease;
     margin-block: 1rem;
 }
 
 .btn:hover{
     /* box-shadow: none; */
-    box-shadow: 0 0 1rem var(--primary-color);
+    box-shadow: 0 0 2rem var(--primary-color);
 }
 
 
@@ -254,7 +265,8 @@ span{
 /* About Section */
 
 
-.about h2{
+.about h2,
+.project h2{
     margin-bottom: 3rem;
     font-size: 4rem;
     text-align: center;
@@ -265,7 +277,8 @@ span{
 .education,
 .experience,
 .skills,
-.certificates{
+.certificates,
+.projects{
     max-width: 75%;
     margin: 1rem auto;
     text-align: left;
@@ -300,7 +313,8 @@ span{
 .education h3,
 .experience h3,
 .skills h3,
-.certificates h3{
+.certificates h3,
+.projects h3{
     font-size: 3rem;
     background-color: var(--snd-bf-color);
     color: var(--primary-color);

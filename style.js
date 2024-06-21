@@ -18,3 +18,26 @@ menuIcon.onclick = () => {
         });
     }
 };
+
+
+// Developer Transition
+
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     // Delay the changing of text for a smooth effect
+    //     setTimeout(function() {
+    //         var roleSpan = document.getElementById('developer-role');
+    //         roleSpan.textContent = 'Web Developer';
+    //     }, 500); // Adjust the delay time as needed (in milliseconds)
+    // });
+
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     var roles = ["Software", "Web","Java Full-Stack"];
+    //     var roleSpan = document.getElementById('developer-role');
+    //     var currentIndex = 0;
+
+    //     setInterval(function() {
+    //         currentIndex = (currentIndex + 1) % roles.length;
+    //         roleSpan.textContent = roles[currentIndex];
+    //     }, 2000); // Change every 2 seconds (2000 milliseconds)
+    // });
+
