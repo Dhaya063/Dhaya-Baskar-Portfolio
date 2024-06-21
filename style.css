@@ -278,7 +278,7 @@ span{
 .experience,
 .skills,
 .certificates,
-.projects{
+.project{
     max-width: 75%;
     margin: 1rem auto;
     text-align: left;
@@ -313,8 +313,7 @@ span{
 .education h3,
 .experience h3,
 .skills h3,
-.certificates h3,
-.projects h3{
+.certificates h3{
     font-size: 3rem;
     background-color: var(--snd-bf-color);
     color: var(--primary-color);
@@ -334,7 +333,8 @@ span{
 }
 
 .education p,
-.experience p{
+.experience p,
+.project p{
     font-size: 2rem;
     font-weight: 500;
     display: flex;
@@ -412,6 +412,59 @@ span{
 }
 
 
+/* Project */
+
+.project .card{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project h4{
+    font-size: 3rem;
+    color: var(--text-color);
+    border-radius: 0 2rem 2rem 0;
+    font-weight: 800;
+}
+
+
+.project img{
+    max-height: 100%; 
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    border-radius: 1.5rem;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.project img:hover {
+    transform: scale(1.04); /* Scale up the image on hover */
+}
+
+.project-btn{
+   align-self: center;
+   padding-top: 2rem;
+}
+
+.project-btn a{
+    font-size: 2rem;
+    color: var(--primary-color);
+    letter-spacing: 0.1rem;
+    font-weight: 800;
+    max-width: fit-content;
+    padding: 1rem 2.8rem;
+    background: var(--text-color);
+    border-radius: 10rem;
+    /* box-shadow: 0 0 1rem var(--primary-color); */
+    box-shadow: none;
+    transition: 0.5s ease;
+    margin-block: 1rem;
+}
+
+.project-btn a:hover{
+    /* box-shadow: none; */
+    box-shadow: 0 0 1rem var(--text-color);
+}
 
 
 /* Breakout Points */
