@@ -20,6 +20,8 @@ menuIcon.onclick = () => {
 };
 
 
+
+
 // Developer Transition
 
     // document.addEventListener('DOMContentLoaded', function() {

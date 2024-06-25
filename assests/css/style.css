@@ -421,7 +421,7 @@ span{
 }
 
 .project h4{
-    font-size: 3rem;
+    font-size: 2.6rem;
     color: var(--text-color);
     border-radius: 0 2rem 2rem 0;
     font-weight: 800;
@@ -440,6 +440,29 @@ span{
 .project img:hover {
     transform: scale(1.04); /* Scale up the image on hover */
 }
+
+.project .programs-list ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style-type: none;
+      
+}
+
+.project .programs-list ul li{
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    max-width: fit-content;
+    padding: 1rem 1.4rem;
+    background: var(--text-color);
+    border-radius: 5rem;
+    box-shadow: none;
+    transition: 0.5s ease;
+    margin-block: 1rem;
+}
+
 
 .project-btn{
    align-self: center;
@@ -498,6 +521,14 @@ span{
         content:"";
         width: 20%;
     }
+
+    .project h4 {
+        font-size: 2.4rem; /* Adjust font size for smaller screens */
+    }
+
+    .project p {
+        font-size: 1.8rem; /* Adjust font size for smaller screens */
+    }
 }
 
 
@@ -526,6 +557,32 @@ span{
         font-size: 4rem;
     }
 
+    .project h4 {
+        font-size: 2.2rem; /* Further adjust font size for smaller screens */
+    }
+    
+    .project .programs-list ul {
+        flex-wrap: wrap;
+    }
+
+    .project .programs-list ul li {
+        margin: 0.5rem;
+        padding: 0.8rem 1.2rem;
+        font-size: 1.4rem;
+    }
+
+    .project-btn {
+        padding-top: 1.5rem;
+    }
+
+    .project-btn a {
+        font-size: 1.8rem;
+        padding: 0.8rem 2rem;
+    }
+
+    .project p {
+        font-size: 1.6rem; /* Further adjust font size for smaller screens */
+    }
 
 }
 
@@ -699,6 +756,25 @@ span{
 
     .image-container img {
         max-height: 100px;
+    }
+
+    .project h4 {
+        font-size: 2rem; /* Adjust font size for even smaller screens */
+    }
+
+    
+    .project .programs-list ul li {
+        font-size: 1.2rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .project-btn a {
+        font-size: 1.6rem;
+        padding: 0.6rem 1.8rem;
+    }
+
+    .project p {
+        font-size: 1.4rem; /* Adjust font size for even smaller screens */
     }
 }
 
